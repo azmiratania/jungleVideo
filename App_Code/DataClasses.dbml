@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SQL2008SamplesDB" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DIT-NB0839408\SQLEXPRESS;Initial Catalog=JungleVideoDB;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SQL2008SamplesDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="tblMember" Member="Members">
+    <Type Name="Member">
+      <Column Name="MemberRecordId" Type="System.String" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" CanBeNull="false" />
+      <Column Name="MemberUserId" Type="System.String" CanBeNull="false" />
+      <Column Name="MemberPassword" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="tblDVDTitle" Member="CCTitleCategories">
+    <Type Name="CCTitleCategory">
+      <Column Name="intDVDTitleIdDV" Member="DVDTitleId" Storage="_CategoryId" Type="System.String" CanBeNull="false" />
+      <Column Name="strTitleDV" Member="Title" Storage="_CategoryName" Type="System.String" CanBeNull="false" />
+      <Column Name="strDescriptionDV" Member="Description" Storage="_CategoryDesc" Type="System.String" CanBeNull="false" />
+      <Column Name="strYearDV" Member="Year" Type="System.String" CanBeNull="false" />
+      <Column Name="intMinuteDV" Member="Minute" Type="System.String" CanBeNull="false" />
+      <Column Name="strRatingCodeDv" Member="RatingCode" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
