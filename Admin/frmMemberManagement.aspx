@@ -15,7 +15,7 @@
     
         <asp:Button ID="btnDisplayMembers" runat="server" Text="Display Members" />
     
-                <%--########################################################################################################--%>
+                
                     <asp:GridView ID="grdData" AutoGenerateColumns="false" runat="server">
                         <Columns>
                         
@@ -28,12 +28,12 @@
                                                                                                 
                             <asp:BoundField     DataField="FullNameUS"         HeaderText="Full Name" />
                             <asp:BoundField     DataField="EmailUS"       HeaderText="Email" />
-                            <%--<asp:BoundField     DataField="GenderName"  HeaderText="Number of Titles out" />--%>
+                           
                             
                             
                         </Columns>
                     </asp:GridView>
-                    <%--########################################################################################################--%>
+                    
         
 
         <asp:Label ID="lblOutput" runat="server" Text=""></asp:Label>
